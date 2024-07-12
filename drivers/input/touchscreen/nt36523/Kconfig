@@ -1,0 +1,12 @@
+#
+# Novatek NT36xxx touchscreen driver configuration
+#
+config TOUCHSCREEN_NT36523_I2C
+	bool "Novatek NT36523"
+	default n
+	depends on I2C
+	help
+	  Say Y here if you have a Novatek NT36523 touchscreen connected
+	  to your system.
+
+	  If unsure, say N.

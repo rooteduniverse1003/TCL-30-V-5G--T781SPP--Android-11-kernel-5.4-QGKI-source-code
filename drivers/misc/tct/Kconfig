@@ -1,0 +1,29 @@
+menuconfig TCT_MISC_DRIVER
+	bool "TCT misc driver support"
+	default y
+	---help---
+	  This option add tct misc driver support.
+
+if TCT_MISC_DRIVER
+
+config TCT_DEBUG_SAVE_BOOT_MSG
+	default y
+	bool "TCT debug: saving kernel log of booting to memory"
+	---help---
+	  file node:/proc/bootmsg
+
+endif
+
+config TCT_UI_TURBO
+	bool "ui turbo v1.0"
+	default n
+
+config TCT_STAT
+	bool "tct statistics driver"
+	depends on TCT_UI_TURBO
+	default y
+
+config TCT_PERF
+	bool "tct performance driver"
+	depends on TCT_UI_TURBO
+	default y

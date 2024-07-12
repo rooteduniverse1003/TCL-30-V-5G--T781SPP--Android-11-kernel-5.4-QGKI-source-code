@@ -1,0 +1,54 @@
+menu "Products selection"
+config TCT_HOLI_COMMON
+        bool "TCT COMMON"
+        depends on ARCH_HOLI
+        help
+          Support for TCT COMMON device.
+
+config TCT_HOLI_BREMENTF
+        bool "TCT BREMENTF"
+        depends on ARCH_HOLI
+        help
+          Support for TCT Brementf device.
+
+##begin add by bo_liu for lcd tp gki
+config TCT_LCD_TP_GKI_BREMENTF
+        bool "TCT LCD TP GKI"
+        depends on ARCH_HOLI
+        help
+          Support for TCT Brementf device.
+##end add by bo_liu for lcd tp gki
+#begin add by zhikui.li for gki
+config TCT_GKI_TRANSFOMERVZW
+         bool "TCT GKI"
+         depends on ARCH_HOLI
+         help
+           Support for TCT TRANSFOMERVZW device.
+#end add by zhikui.li for gki
+
+config TCT_HOLI_TRANSFORMERVZW
+        bool "TCT TRANSFORMERVZW"
+        depends on ARCH_HOLI
+        help
+          Support for TCT transformervzw device.
+
+config TCT_HOLI_IRVINEVZW
+        bool "TCT IRVINEVZW"
+        depends on ARCH_HOLI
+        help
+          Support for TCT irvinevzw device.
+#begin add by peisong.cao for lcd&tp 	  
+config TCT_QGKI_IRVINEVZW
+        bool "TCT QGKI IRVINEVZW"
+        depends on ARCH_HOLI
+        help
+          Support for TCT irvinevzw device.
+#end add by peisong.cao for lcd&tp 
+config TCT_HOLI_BREMENVISIBLE
+        bool "TCT BREMENVISIBLE"
+        depends on ARCH_HOLI
+        help
+          Support for TCT bremenvisible device.
+
+endmenu
+

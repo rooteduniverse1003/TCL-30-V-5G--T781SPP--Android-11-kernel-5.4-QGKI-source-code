@@ -1,0 +1,14 @@
+#
+# Mediatek AW96105 Driver
+#
+
+config AW96105_SAR
+	tristate "Awinic AW96105_Sar driver"
+	depends on I2C
+	default n
+	help
+	  Say Y here if you have Awinic AW96105_Sar controller
+	  chip in your system.
+	  If unsure, say N.
+	  To compile this driver as a module, choose M here: the
+	  module will be called AW96105_Sar key.

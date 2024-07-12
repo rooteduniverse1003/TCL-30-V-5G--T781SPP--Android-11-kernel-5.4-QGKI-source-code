@@ -1,0 +1,6 @@
+config TCT_HALL_SWITCH
+	bool "TCT HALL SWITCH"
+	default n
+	help
+	  If this option is set,it will support tct hall switch.
+

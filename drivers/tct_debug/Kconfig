@@ -1,0 +1,9 @@
+#
+# TCT_DEBUG_KLOG configuration.
+#
+config TCT_DEBUG_KLOG
+	depends on ARCH_MSM || ARCH_QCOM
+	tristate "print kernel log to userspace by netlink."
+	---help---
+	  print kernel log to userspace by netlink.
+

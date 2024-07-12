@@ -1,0 +1,26 @@
+#
+# Mediatek AW96103 Driver
+#
+
+config AW96103_SAR
+	tristate "Awinic AW96103_Sar driver"
+	depends on I2C
+	default n
+	help
+	  Say Y here if you have Awinic AW96103_Sar controller
+	  chip in your system.
+	  If unsure, say N.
+	  To compile this driver as a module, choose M here: the
+	  module will be called AW96103_Sar key.
+
+config TCT_TRANSFORMERVZW_SAR
+	tristate "Awinic AW96103_Sar driver"
+	depends on I2C
+	default n
+	help
+	  Say Y here if you have Awinic AW96103_Sar controller
+	  chip in your system.
+	  If unsure, say N.
+	  To compile this driver as a module, choose M here: the
+	  module will be called AW96103_Sar key.
+

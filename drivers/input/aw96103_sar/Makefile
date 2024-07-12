@@ -1,0 +1,1 @@
+obj-$(CONFIG_AW96103_SAR)  += aw_bin_parse0.o aw96103.o

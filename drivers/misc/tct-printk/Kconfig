@@ -1,0 +1,10 @@
+
+config TCT_PRINTK_UART_CONSOLE
+	bool "TCT printk UART controller"
+	depends on ARCH_MSM || ARCH_QCOM
+	help
+	  MTK_PRINTK_UART_CONSOLE which is used to control whether to
+	  control printk to uart console.  when boot up finish
+	  uart console do not output printk log.
+	  also RD can set the setting by command.
+

@@ -1,0 +1,16 @@
+#
+# Focaltech Touchscreen driver configuration
+#
+
+config TOUCHSCREEN_IRVINE_VZW_FT8756 
+    tristate "Focaltech Touchscreen FT8756 of BREMEN_TF"
+    default n
+    help
+      Say Y here if you have Focaltech touch panel.
+      If unsure, say N.
+      
+config TOUCHSCREEN_FTS_DIRECTORY_IRVINE_VZW_FT8756
+    string "Focaltech ts directory name"
+    default "focaltech_touch"
+    depends on TOUCHSCREEN_BREMEN_TF_FT8756
+
